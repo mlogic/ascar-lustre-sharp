@@ -1,0 +1,10 @@
+SHARP is the traffic control rule generator and optimizer for ASCAR,
+as described in paper ``ASCAR: Automating Contention Management for
+High-Performance Storage Systems'' by Yan Li, Xiaoyuan Lu, Ethan
+L. Miller, and Darrell D. E. Long. It is developed by the Storage
+Systems Research Center in University of California, Santa Cruz.
+
+The programs here are tightly coupled with our test environment so it
+may require modification if you plan to run them in other
+settings. Please contact us if you have questions or want to share
+your modification for code merge.
