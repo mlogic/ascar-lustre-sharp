@@ -1,0 +1,20 @@
+# File System Under Test
+FSUT=/lustre1
+OUTPUT_DIR=/root/results
+TS=`date +%F_%H-%M-%S`
+
+IOR_BIN=/share/ior/src/ior
+FILEBENCH_BIN=/share/filebench/filebench-1.4.9.1/filebench
+MADBENCH2_BIN=/share/madbench2/madbench2
+
+CLIENT_LIST_FILE=/share/client_list
+SERVER_LIST_FILE=/share/server_list
+
+# The threshold of stdev/mean (VAR_PER). If one benchmark's VAR_PER is
+# higher than this threshold, its result is considerred unstable and
+# would be rerun for up to three times.
+VAR_PER_THRESHOLD=20
+
+LOCAL_STAT_LOG_DIR=~/stat_log
+
+mkdir -p $OUTPUT_DIR
